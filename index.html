@@ -15,7 +15,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3C79F5";>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333";>
         <a class="navbar-brand" href="#">
             <img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
             Cortex Uruguay
@@ -49,7 +50,7 @@
         <div class="home-content">
             <h1>Cortex Uruguay</h1>
             <h3>Páginas web a medida</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aperiam iusto saepe itaque nisi reiciendis amet nulla laborum sequi delectus cumque, modi, repellendus impedit rem totam quaerat soluta eius velit!</p>
+            <p>Te ayudamos a incursionar tu negocio al mundo digital. Con nuestros servicios de Desarrollo Web y Márketing te daremos ventaja competitiva en Internet</p>
             <div class="btn-box">
                 <a href="#">Servicios</a>
                 <a href="#">Contacto</a>
@@ -57,6 +58,8 @@
             <img class="banner-img" src="assets/banner.png" alt="Web Dev">
         </div>
       </section>
+
+      <!--Services-->
       <section class="services">
         <h1>Servicios</h1>
         <div class="card-container">
@@ -66,7 +69,9 @@
               </div>
               <div class="card-content">
                   <h2>Desarrollo Web</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                  <p>¡Ponete al día!</p>
+                  <p>Contá con nuestra capacidad técnica para introducir tu negocio en Internet.</p>
+                  <p>Aumentá tu capacidad competitiva, hagamos que tu marca sea influyente en el mundo digital</p>
                   <a href="#">Ver más</a>
               </div>
           </div>
@@ -76,7 +81,9 @@
               </div>
               <div class="card-content">
                   <h2>SEO</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                  <p>Una vez estés en Internet ¡Es hora de que tu marca haga ruido!</p>
+                  <p>Con nuestros servicios de SEO, tu marca será más visible en buscadores como Google</p>	
+                  <p>¡Aumentá tu tráfico y tus ventas!</p>
                   <a href="#">Ver más</a>
               </div>
           </div>
@@ -86,11 +93,118 @@
               </div>
               <div class="card-content">
                   <h2>Ecommerce</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+                  <p>¿Tenés un catálogo de productos?</p>
+                  <p>¡No te quedes atrás! ¡Vendé tus productos en Internet!</p>
+                  <p>Con nuestros servicios de Ecommerce, podrás vender tus productos en línea, hacé que te conozcan en todo el Uruguay</p>
                   <a href="#">Ver más</a>
               </div>
           </div>
         </div>
       </section>
+
+      <!--About us-->
+      <section class="about-us">
+        <h1>Sobre nosotros</h1>
+        <div class="about-us-container">
+          <div class="about-us-content">
+            <h2>¿Quiénes somos?</h2>
+            <p>Cortex es una compañía de Desarrollo Web y márketing digital.
+              Somos el mejor amigo de las pequeñas y medianas empresas que buscan crecer en el mundo digital.
+              Nuestro objetivo es ayudar a las empresas a aumentar su renombre y su influencia en Internet, brindando soluciones a medida.
+            </p>
+          </div>
+          <div class="about-us-img">
+            <img src="assets/brand.jpg" alt="About us">
+          </div>
+        </div>
+
+        <!--Team it only has 2 pictures of 2 persons-->
+        <div class="team">
+          <h1 style="color: #333;">Nuestro equipo</h1>
+          <div class="team-container">
+            <div class="team-content">
+              <img src="assets/lucas.jpg" alt="Lucas">
+              <h2>Lucas Scognamiglio, 25 años</h2>
+              <p>Lucas, programador con más de 5 años de experiencia en el rubro, amante de la programación y del café ☕</p>
+            </div>
+            <div class="team-content">
+              <img src="assets/nico.jpg" alt="Nico">
+              <h2>Nicolás Durán, 23 años</h2>
+              <p>Nico, nuestra mente creativa y héroe del márketing. Apasionado por los diseños que rompen el molde.</p>
+            </div>
+          </div>
+      </section>
+
+      <!--Our clients-->
+      <section class="about-us">
+        <h1>Nuestros clientes</h1>
+        <div class="clients-container">
+            <div class="clients-content">
+              <h2>Better Uruguay</h2>
+              <p>Tienda de suplementos alimenticios</p>
+              <a href="https://betteruruguay.web.app/index.html">
+                <img src="assets/screens.png" alt="Better">
+              </a>
+            </div>
+          </div>
+      </section>
+
+      <!--Contact form with name, last name, phone, email and message -->
+      <section class="contact">
+        <div class="contact-container">
+          <div class="contact-content">
+            <h1>Contacto</h1>
+            <h2>¿Tenés alguna duda?</h2>
+            <form>
+              <!--Name and last name occupies half screen each-->
+              <div class="row">
+                <div class="col">
+                  <label for="nameInput">Nombre</label>
+                  <input type="text" class="form-control" placeholder="Nombre" id="nameInput">
+                </div>
+                <div class="col">
+                  <label for="lastNameInput">Apellido</label>
+                  <input type="text" class="form-control" placeholder="Apellido" id="lastNameInput">
+                </div>
+              </div>
+      
+              <div class="form-group">
+                <label for="emailInput">Correo Electrónico</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="nombre@ejemplo.com">
+              </div>
+              <div class="form-group">
+                <label for="messageInput">Mensaje</label>
+                <textarea class="form-control" id="messageInput" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-content">
+            <h1>Cortex Uruguay</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/cortexuruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/facebook.png" height="30" class="d-inline-block align-top" alt="Facebook"></a>
+              <a href="https://www.instagram.com/cortexuruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram.png" height="40" class="d-inline-block align-top" alt="Instagram" style="margin-bottom: 15px; margin-top: -4px"></a>
+              <a href="https://www.linkedin.com/company/cortex-uruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" height="30" class="d-inline-block align-top" alt="Linkedin"></a>
+            </div>
+          </div>
+          <div class="footer-content">
+            <h1>Información de contacto</h1>
+            <ul>
+              <li><a href="#">+598 99 999 999</a></li>
+              <li><a href="#">contacto@cortexuruguay</a></li>
+              <li><a href="#">Montevideo, Uruguay</a></li>
+            </ul>
+          </div>
+          <br><br>
+          <p>Derechos reservados</p>
+        </div>
+      </footer>
 </body>
 </html>
