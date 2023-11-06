@@ -21,6 +21,9 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 .header {
     text-align: center;
