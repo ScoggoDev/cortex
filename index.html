@@ -10,55 +10,55 @@
     <link rel="stylesheet" href="css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!--Bootstrap 5-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</head>
+    </head>
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #333";>
-        <a class="navbar-brand" href="#">
-            <img src="assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Cortex Uruguay
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <!--This link scrolls down to services section-->
-              <a class="nav-link" href="#services">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us">Sobre nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacto</a>
-            </li>
-        </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <!--Social medias-->
-            <a href="https://www.facebook.com/cortexuruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/facebook.png" height="30" class="d-inline-block align-top" alt="Facebook"></a>
-            <a href="https://www.instagram.com/cortexuruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram.png" height="40" class="d-inline-block align-top" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/company/cortex-uruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" height="30" class="d-inline-block align-top" alt="Linkedin"></a>
-          </form>      
-        </div>
-      </nav>
-
-      <section class="home">
-        <div class="home-content">
-            <h1>Cortex Uruguay</h1>
-            <h3>Páginas web a medida</h3>
-            <p>Te ayudamos a incursionar tu negocio al mundo digital. Con nuestros servicios de Desarrollo Web y Márketing te daremos ventaja competitiva en Internet</p>
-            <div class="btn-box">
-                <a href="#services">Servicios</a>
-                <a href="#contact">Contacto</a>
-            </div>
-            <img class="banner-img" src="assets/banner.png" alt="Web Dev">
-        </div>
-      </section>
+  <nav>
+    
+    <div class="logo">Cortex</div>
+    <!-- toggle menu button -->
+    <span class="menubtn" onclick="openNav()">&#9776;</span>
+    <div class="navLinks">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#about-us">Sobre Nosotros</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+    <!-- responsive side navbar -->
+    <div class="sideNav" id="sidenav">
+      <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+      <a href="#">Inicio</a>
+      <a href="#about-us">Sobre Nosotros</a>
+      <a href="#services">Servicios</a>
+      <a href="#contact">Contacto</a>
+    </div>
+    <!-- Header content with banner image -->
+    <div class="row">
+      <div class="column1">
+        <br>
+        <h1>Cortex Uruguay</h1>
+        <p>Te ayudamos a incursionar tu negocio al mundo digital. <br> <br> Con nuestros servicios de Desarrollo Web y Márketing te daremos una mayor ventaja competitiva en Internet</p>  <br>
+        <button><a href="#services">Servicios</a></button>
+        <button><a href="#contact">Contacto</a></button>
+      </div>
+      <div class="column2">
+        <br>
+        <img src="assets/banner.jpg" alt="banner" width="500px" style="border-radius: 50%;">
+      </div>
+    </div>
+   
+    <!-- javascript to make side menu appear -->
+    <script>
+      function openNav() {
+        document.getElementById("sidenav").style.width = "50%";
+      }
+      function closeNav() {
+        document.getElementById("sidenav").style.width = "0%";
+      }
+    </script>
 
       <!--Services-->
       <section class="services" id="services">
@@ -68,37 +68,31 @@
               <div class="card-img">
                   <img src="assets/web.png" alt="Web" width="80px" height="80px">
               </div>
-              <div class="card-content">
-                  <h2>Desarrollo Web</h2>
-                  <p>¡Ponete al día!</p>
-                  <p>Contá con nuestra capacidad técnica para introducir tu negocio en Internet.</p>
-                  <p>Aumentá tu capacidad competitiva, hagamos que tu marca sea influyente en el mundo digital</p>
-                  <a href="#">Ver más</a>
-              </div>
+              <h2>Desarrollo Web</h2>
+              <p>¡Ponete al día!</p><br>
+              <p>Contá con nuestra capacidad técnica para introducir tu negocio en Internet.</p><br>
+              <p>Aumentá tu capacidad competitiva, hagamos que tu marca sea influyente en el mundo digital</p><br>
+              <a href="#">Ver más</a>
           </div>
           <div class="card">
               <div class="card-img">
                   <img src="assets/seo.png" alt="SEO" width="80px" height="80px">
               </div>
-              <div class="card-content">
-                  <h2>SEO</h2>
-                  <p>Una vez estés en Internet ¡Es hora de que tu marca haga ruido!</p>
-                  <p>Con nuestros servicios de SEO, tu marca será más visible en buscadores como Google</p>	
-                  <p>¡Aumentá tu tráfico y tus ventas!</p>
-                  <a href="#">Ver más</a>
-              </div>
+              <h2>SEO</h2>
+              <p>Una vez estés en Internet ¡Es hora de que tu marca haga ruido!</p><br>
+              <p>Con nuestros servicios de SEO, tu marca será más visible en buscadores como Google</p><br>	
+              <p>¡Aumentá tu tráfico y tus ventas!</p><br>
+              <a href="#">Ver más</a>
           </div>
           <div class="card">
               <div class="card-img">
                   <img src="assets/ecommerce.png" alt="Ecommerce" width="80px" height="80px">
               </div>
-              <div class="card-content">
-                  <h2>Ecommerce</h2>
-                  <p>¿Tenés un catálogo de productos?</p>
-                  <p>¡No te quedes atrás! ¡Vendé tus productos en Internet!</p>
-                  <p>Con nuestros servicios de Ecommerce, podrás vender tus productos en línea, hacé que te conozcan en todo el Uruguay</p>
-                  <a href="#">Ver más</a>
-              </div>
+              <h2>Ecommerce</h2>
+              <p>¿Tenés un catálogo de productos?</p><br>
+              <p>¡No te quedes atrás! ¡Vendé tus productos en Internet!</p>
+              <p>Con nuestros servicios de Ecommerce, podrás vender tus productos en línea, hacé que te conozcan en todo el Uruguay</p><br>
+              <a href="#">Ver más</a>
           </div>
         </div>
       </section>
@@ -177,7 +171,14 @@
                 <label for="messageInput">Mensaje</label>
                 <textarea class="form-control" id="messageInput" rows="3"></textarea>
               </div>
-              <button type="submit" class="btn btn-warning">Enviar</button>
+              <button type="submit" style="
+                background-color: #333;
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                cursor: pointer;
+              ">Enviar</button>
             </form>
           </div>
         </div>
@@ -188,22 +189,23 @@
         <div class="footer-container">
           <div class="footer-content">
             <h1>Cortex Uruguay</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
             <div class="footer-social">
               <a href="https://www.facebook.com/cortexuruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/facebook.png" height="30" class="d-inline-block align-top" alt="Facebook"></a>
-              <a href="https://www.instagram.com/cortexuruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram.png" height="40" class="d-inline-block align-top" alt="Instagram" style="margin-bottom: 15px; margin-top: -4px"></a>
+              <a href="https://www.instagram.com/cortexuruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/instagram.png" height="30" class="d-inline-block align-top" alt="Instagram" style="margin-top: 10px"></a>
               <a href="https://www.linkedin.com/company/cortex-uruguay/" target="_blank" rel="noopener noreferrer"><img src="assets/linkedin.png" height="30" class="d-inline-block align-top" alt="Linkedin"></a>
             </div>
           </div>
           <div class="footer-content">
+            <br>
             <h1>Información de contacto</h1>
             <ul>
-              <li><a href="#">+598 99 999 999</a></li>
-              <li><a href="#">contacto@cortexuruguay</a></li>
+              <li><a href="#">+598 092 326 302</a></li>
+              <li><a href="#">contacto@hotmail.com</a></li>
+              <br>
               <li><a href="#">Montevideo, Uruguay</a></li>
             </ul>
           </div>
-          <br><br>
+          <br>
           <p>Derechos reservados</p>
         </div>
       </footer>
